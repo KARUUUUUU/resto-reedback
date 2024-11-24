@@ -1,0 +1,70 @@
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/d5/ae/91/rooftop-pool-cabanas.jpg?w=1000&h=600&s=1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .feedback-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 255, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    color: #fff;
+  }
+  
+  .feedback-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .feedback-error {
+    color: #ff4d4d;
+    margin-bottom: 15px;
+    font-style: italic, bold;
+  }
+  
+  .feedback-input,
+  .feedback-textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .feedback-textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .feedback-submit-btn {
+    background: linear-gradient(45deg, rgba(0, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .feedback-submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  

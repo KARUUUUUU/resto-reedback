@@ -1,0 +1,113 @@
+/* Center content in the page */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/d5/ae/91/rooftop-pool-cabanas.jpg?w=1000&h=600&s=1');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+
+/* Box containing the content */
+.dashboard-box {
+    background-color: rgba(230, 230, 230, 0.0);
+    padding: 50px 60px; /* Increased padding for a larger box */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 255, 255, 0.3); /* Lighter holographic effect */
+    text-align: center;
+    width: 85%; /* Slightly larger width */
+    max-width: 650px; /* Increased max-width for a bigger box */
+    margin: auto;
+    z-index: 1; /* Ensure it appears above the background */
+    backdrop-filter: blur(10px); /* Optional frosted glass effect */
+  }
+  
+  /* Title styling */
+  .dashboard-title {
+    font-size: 2.5rem; /* Increased font size */
+    color: whitesmoke;
+    margin-bottom: 20px;
+  }
+  
+  /* Description styling */
+  .dashboard-description {
+    font-size: 1.3rem; /* Increased font size */
+    color: whitesmoke;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for the cards (Submit Feedback & View Feedback) */
+  .dashboard-links {
+    display: flex;
+    justify-content: space-between; /* Space between the cards */
+    gap: 20px; /* Reduced gap between cards */
+    margin-top: 50px;
+  }
+  
+  /* Holographic card styling for Submit and View Feedback buttons */
+  .dashboard-link {
+    display: block;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 30px; /* Reduced padding for smaller cards */
+    width: 200px; /* Reduced width for more height */
+    height: 250px; /* Increased height for longer cards */
+    border-radius: 15px;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3), rgba(0, 255, 255, 0.2)); /* Holographic gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  /* Hover effect to start pulsing animation */
+  .dashboard-link:hover {
+    animation: pulse 1.5s infinite; /* Start pulsing on hover */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 0.8); /* Enhanced holographic glow */
+  }
+  
+  /* Keyframes for pulsing effect */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.9;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.9;
+    }
+  }
+  
+  /* Logout button styling */
+  .logout-btn-container {
+    margin-top: 20px;
+  }
+  
+  .logout-btn {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #feb47b;
+  }
+  
+  
